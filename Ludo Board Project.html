@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ludo Project</title>
+
+    <style>
+      /* *HTML RESET */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* *STYLING THE BODY OF THE PAGE */
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        background-color: darkslategrey;
+      }
+
+      /* *STYLING THE PAGE HEADING */
+      #heading {
+        /* text-align: center; */
+        width: 100%;
+        margin: 20px 0;
+      }
+
+      /* *STYLING THE DIV THAT HOLDS THE TABLE ELEMENT */
+      #table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 40px auto;
+        /* border-radius: 10px; */
+
+      }
+      
+      /* *DEFINING THE VARIOUS COLOR CLASSES */
+
+      /* *The Green Class */
+      .green {
+        background-color: rgba(0, 128, 0, 0.562);
+      }
+
+      /* The Blue Class */
+      .blue {
+        background-color: rgba(0, 0, 255, 0.562);
+      }
+      
+      /* The Red Class */
+      .red {
+        background-color: rgba(255, 0, 0, 0.562);
+      }
+      
+      /* The Yellow Class */
+      .yellow {
+        background-color: rgba(255, 255, 0, 0.562);
+      }
+      
+      /* The White Class */
+      .white {
+        background-color: beige;
+      }
+      
+      /* *DEFINING THE TWO SIZE CLASSES */
+
+      /* The Big Class */
+      /* This is for the four major boxes. For the blue, green, yellow and red big boxes. */
+      .big {
+        padding: 80px;
+      }
+      
+      /* The Small Class */
+      /* This is for the smaller ludo boxes. For the small spaces in-between the large boxes. */
+      .small {
+        padding: 30px;
+      }
+
+      /* The Middle Id */
+      /* This is for the middle box on the ludo set. Setting its size. */
+      #middle {
+        padding: 50;
+        font-size: 40px;
+      }
+      
+      /* *STYLING THE TABLE ITSELF */
+      table {
+        border-collapse: collapse;
+        /* border-radius: 10px; */
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      
+      /* *STYLING THE HEADINGS AND CELLS OF THE TABLE. (Just giving them a border) */
+      th, td {
+        /* border-collapse: collapse; */
+        border: 3px solid #222222;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="heading">
+      <h1>THE LUDO GAME</h1>
+    </div>
+
+    <div id="table">
+      <table>
+        <tbody>
+          <!-- *FIRST SECTION -->
+          <!-- FIRST ROW -->
+          <tr>
+            <td class="green big" colspan="5" rowspan="5">Green</td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="blue big" rowspan="5" colspan="5">Blue</td>
+          </tr>
+      
+          <!-- SECOND ROW -->
+          <tr>
+            <td class="white small"></td>
+            <td class="blue small"></td>
+            <td class="blue small"></td>
+          </tr>
+
+          <!-- THIRD ROW -->
+          <tr>
+            <td class="white small"></td>
+            <td class="blue small"></td>
+            <td class="white small"></td>
+          </tr>
+
+          <!-- FOURTH ROW -->
+          <tr>
+            <td class="white small"></td>
+            <td class="blue small"></td>
+            <td class="white small"></td>
+          </tr>
+
+          <!-- FIFTH ROW -->
+          <tr>
+            <td class="white small"></td>
+            <td class="blue small"></td>
+            <td class="white small"></td>
+          </tr>
+
+
+          <!-- *MIDDLE SECTION -->
+          <!-- FIRST ROW -->
+          <tr>
+            <td class="white small"></td>
+            <td class="green small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+
+            <td id="middle" style="text-align: center" rowspan="3" colspan="3">Ludo</td>
+
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+          </tr>
+
+          <!-- SECOND ROW -->
+          <tr>
+            <td class="white small"></td>
+            <td class="green small"></td>
+            <td class="green small"></td>
+            <td class="green small"></td>
+            <td class="green small"></td>
+            <td class="yellow small"></td>
+            <td class="yellow small"></td>
+            <td class="yellow small"></td>
+            <td class="yellow small"></td>
+            <td class="white small"></td>
+          </tr>
+
+          <!-- THIRD ROW -->
+          <tr>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="yellow small"></td>
+            <td class="white small"></td>
+          </tr>
+
+
+          <!-- *LAST SECTION -->
+          <!-- FIRST ROW -->
+          <tr>
+            <td class="red big" colspan="5" rowspan="5">Red</td>
+            <td class="white small"></td>
+            <td class="red small"></td>
+            <td class="white small"></td>
+            <td class="yellow big" rowspan="5" colspan="5">Yellow</td>
+          </tr>
+      
+          <!-- SECOND ROW -->
+          <tr>
+            <td class="white small"></td>
+            <td class="red small"></td>
+            <td class="white small"></td>
+          </tr>
+      
+          <!-- THIRD ROW -->
+          <tr>
+            <td class="white small"></td>
+            <td class="red small"></td>
+            <td class="white small"></td>
+          </tr>
+      
+          <!-- FOURTH ROW -->
+          <tr>
+            <td class="red small"></td>
+            <td class="red small"></td>
+            <td class="white small"></td>
+          </tr>
+      
+          <!-- FIFTH ROW -->
+          <tr>
+            <td class="white small"></td>
+            <td class="white small"></td>
+            <td class="white small"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
